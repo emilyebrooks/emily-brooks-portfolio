@@ -1,0 +1,67 @@
+/* COLORS: 
+navy: #334B71
+pink: #E2B6BC
+green: #CEDFD6
+grey: #F7F3F4
+white: #FFFFFF */
+
+/* HEADER */
+header {
+  background-color: #334b71;
+  /* change to masked image */
+}
+
+ul {
+  color: #e2b6bc;
+}
+
+h1,
+h3 {
+  color: #ffffff;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: #e2b6bc;
+}
+
+h4 {
+  font: ;
+  color: #334b71;
+}
+
+#skills p {
+  color: #334b71;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  background-color: #cedfd6;
+}
+
+#about p {
+  color: #334b71;
+}
+
+/* CONNECT SECTION */
+
+#connect {
+  background-color: #334b71;
+}
+
+#connect h4,
+p {
+  color: #ffffff;
+}
+
+#connect button {
+  color: #334b71;
+  background-color: #e2b6bc;
+}
+
+/* FOOTER */
+footer {
+  background-color: #334b71;
+  color: #e2b6bc;
+}
