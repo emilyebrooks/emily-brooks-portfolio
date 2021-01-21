@@ -12,11 +12,17 @@ header {
 }
 
 ul {
+  font-family: "Raleway", sans-serif;
   color: #e2b6bc;
 }
 
-h1,
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
 h3 {
+  font-family: "Marcellus", serif;
   color: #ffffff;
 }
 
@@ -26,11 +32,13 @@ h3 {
 }
 
 h4 {
-  font: ;
+  font-family: "Raleway", sans-serif;
   color: #334b71;
+  text-decoration: underline #cedfd6 3px;
 }
 
 #skills p {
+  font-family: "Marcellus", serif;
   color: #334b71;
 }
 
@@ -41,6 +49,7 @@ h4 {
 }
 
 #about p {
+  font-family: "Marcellus", serif;
   color: #334b71;
 }
 
@@ -50,12 +59,22 @@ h4 {
   background-color: #334b71;
 }
 
+#connect p {
+  font-family: "Marcellus", serif;
+  color: #ffffff;
+}
+
 #connect h4,
 p {
   color: #ffffff;
 }
 
+input {
+  font-family: "Marcellus", serif;
+}
+
 #connect button {
+  font-family: "Marcellus", serif;
   color: #334b71;
   background-color: #e2b6bc;
 }
