@@ -11,9 +11,28 @@ header {
   /* change to masked image */
 }
 
+nav {
+  text-align: right;
+}
 ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 30px;
+}
+
+li a {
   font-family: "Raleway", sans-serif;
   color: #e2b6bc;
+  text-align: right;
+  text-decoration: none;
+}
+
+li a:hover {
+  /*green line appears under word when hovered over*/
+  text-decoration: underline solid #cedfd6 3px;
 }
 
 h1 {
@@ -34,7 +53,11 @@ h3 {
 h4 {
   font-family: "Raleway", sans-serif;
   color: #334b71;
-  text-decoration: underline #cedfd6 3px;
+  text-align: center; /*centers the text in the div*/
+  margin: auto; /*centers the div*/
+  width: 10%; /*makes the div small so bottom border is a short line instead of full length*/
+  border-bottom: 3px solid #cedfd6;
+  padding-bottom: 10px;
 }
 
 #skills p {
@@ -76,11 +99,16 @@ input {
 #connect button {
   font-family: "Marcellus", serif;
   color: #334b71;
-  background-color: #e2b6bc;
+  background-color: #e2b6bc; /*changes button background when hovered*/
+}
+
+#connect button:hover {
+  background-color: #cedfd6;
 }
 
 /* FOOTER */
 footer {
   background-color: #334b71;
   color: #e2b6bc;
+  text-align: center;
 }
