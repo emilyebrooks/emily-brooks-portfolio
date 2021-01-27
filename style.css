@@ -9,6 +9,9 @@ white: #FFFFFF */
 header {
   background-color: #334b71;
   /* change to masked image */
+  height: 300px;
+  margin-bottom: 20px;
+  background-image: url("img/hero-emily.png");
 }
 
 nav {
@@ -20,7 +23,7 @@ ul {
 
 li {
   display: inline;
-  padding: 30px;
+  padding: 3%;
 }
 
 li a {
@@ -35,9 +38,15 @@ li a:hover {
   text-decoration: underline solid #cedfd6 3px;
 }
 
+#logo img {
+  height: 50px;
+  width: 50px;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+  font-weight: 300;
 }
 
 h3 {
@@ -48,6 +57,11 @@ h3 {
 /* SKILLS SECTION */
 #skills {
   background-color: #e2b6bc;
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 5%;
 }
 
 h4 {
@@ -55,8 +69,6 @@ h4 {
   color: #334b71;
   text-align: center; /*centers the text in the div*/
   margin: auto; /*centers the div*/
-  width: 10%; /*makes the div small so bottom border is a short line instead of full length*/
-  border-bottom: 3px solid #cedfd6;
   padding-bottom: 10px;
 }
 
@@ -69,6 +81,11 @@ h4 {
 
 #about {
   background-color: #cedfd6;
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 5%;
 }
 
 #about p {
@@ -80,6 +97,7 @@ h4 {
 
 #connect {
   background-color: #334b71;
+  padding-top: 5%;
 }
 
 #connect p {
@@ -96,10 +114,16 @@ input {
   font-family: "Marcellus", serif;
 }
 
+#message_box {
+  height: 50px;
+}
+
 #connect button {
   font-family: "Marcellus", serif;
   color: #334b71;
   background-color: #e2b6bc; /*changes button background when hovered*/
+  border-radius: 20%;
+  padding: 5px 10px;
 }
 
 #connect button:hover {
@@ -111,4 +135,10 @@ footer {
   background-color: #334b71;
   color: #e2b6bc;
   text-align: center;
+  /* height: 50px; */
+}
+
+footer p {
+  margin-top: 0px;
+  padding: 2%;
 }
