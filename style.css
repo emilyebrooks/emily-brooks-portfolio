@@ -7,11 +7,13 @@ white: #FFFFFF */
 
 /* HEADER */
 header {
-  background-color: #334b71;
+  /* background-color: #334b71; */
   /* change to masked image */
-  height: 300px;
+  width: 100%;
+  height: 330px;
   margin-bottom: 20px;
-  background-image: url("img/hero-emily.png");
+  background-image: url("img/hero-image.png");
+  background-size: 100%;
 }
 
 nav {
