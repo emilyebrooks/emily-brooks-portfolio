@@ -8,21 +8,47 @@ white: #FFFFFF */
 body {
   margin: 0;
 }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+
+h3 {
+  font-family: "Marcellus", serif;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  text-align: center; /*centers the text in the div*/
+  margin: auto; /*centers the div*/
+  padding-bottom: 10px;
+}
+
 /* HEADER */
+
 header {
   background-color: #334b71;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px; 
+  height: 330px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 nav {
-  text-align: right;
+  text-align: center;
 }
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -43,11 +69,10 @@ li a:hover {
 }
 
 #title {
-  padding-top: 30px;
+  padding-top: 30px; /*adds space between nav and logo*/
 }
 
 #logo {
-  width: 60%;
   text-align: center;
   padding: 20px 0 20px 0;
 }
@@ -56,28 +81,10 @@ li a:hover {
   width: 75px;
 }
 
-header h1 {
-  width: 60%;
-  text-align: center;
-}
-
+header h1,
 header h3 {
-  width: 60%;
   text-align: center;
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 2em;
-  letter-spacing: 0.2em;
-}
-
-h3 {
-  font-family: "Marcellus", serif;
-  color: #ffffff;
-  font-size: 1em;
+  margin: 0.85em 0.3em;
 }
 
 /* SKILLS SECTION */
@@ -92,8 +99,8 @@ h3 {
 
 .skills {
   width: 40%;
-  margin: 30px;
-  display: inline-block;
+  margin: auto;
+  /* display: inline-block; */
 }
 
 .skills img {
@@ -101,12 +108,8 @@ h3 {
   height: auto;
 }
 
-h4 {
-  font-family: "Raleway", sans-serif;
+#skills h4 {
   color: #334b71;
-  text-align: center; /*centers the text in the div*/
-  margin: auto; /*centers the div*/
-  padding-bottom: 10px;
 }
 
 #skills p {
@@ -126,18 +129,28 @@ h4 {
   padding-bottom: 5%;
 }
 
-#about img {
-  width: 80%;
-  display: block;
-  margin-left: auto; 
-  margin-right: auto;
+#about h4 {
+  color: #334b71;
 }
 
 #about p {
   font-family: "Marcellus", serif;
   color: #334b71;
-  padding: 5%; 
-  line-height: 2em; 
+  padding: 5%;
+  line-height: 2em;
+}
+
+#headshot-quote img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+#headshot-quote p {
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* CONNECT SECTION */
@@ -145,18 +158,20 @@ h4 {
 #connect {
   background-color: #334b71;
   padding: 5%;
-  
 }
 
 #connect p {
   font-family: "Marcellus", serif;
   color: #ffffff;
-  line-height: 2em; 
+  line-height: 2em;
 }
 
-#connect h4,
-p {
+#connect h4 {
   color: #ffffff;
+}
+
+#contact-form {
+  text-align: center;
 }
 
 input {
@@ -184,9 +199,20 @@ input {
   height: 25px;
 }
 
+.contact-info a {
+  text-decoration: none;
+  color: #cedfd6;
+}
+
 .contact-info p,
 .social {
   text-align: center;
+}
+
+.fab {
+  color: #cedfd6;
+  width: 60px;
+  font-size: 2.25rem;
 }
 
 /* FOOTER */
@@ -201,3 +227,40 @@ footer p {
   padding: 2%;
   color: #e2b6bc;
 }
+
+/* >500 Breakpoint to manage headshot size */
+@media screen and (min-width: 500px) {
+  #headshot-quote {
+    margin: auto;
+    text-align: center;
+  }
+
+  #headshot-quote img {
+    width: 40%;
+    display: inline;
+    /* margin-left: 25px; */
+  }
+
+  #headshot-quote p {
+    width: 40%;
+    display: inline;
+    padding: 0;
+  }
+} /*end bracket for min-width 500 */
+
+/* TABLET BREAKPOINTS SIZES */
+@media screen and (min-width: 767px) {
+  nav {
+    text-align: right;
+    margin-right: 3%;
+  }
+
+  #logo {
+    width: 60%; /* makes container 60% and justifies it to the left so logo shifts left on bigger screens*/
+  }
+
+  header h1,
+  header h3 {
+    width: 60%;
+  }
+} /*end bracket for min-width 767 */
