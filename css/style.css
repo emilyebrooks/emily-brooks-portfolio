@@ -25,10 +25,17 @@ h3 {
 
 h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: 400;
   text-align: center; /*centers the text in the div*/
   margin: auto; /*centers the div*/
   padding-bottom: 10px;
+}
+
+h5 {
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  font-size: 0.8em;
 }
 
 /* HEADER */
@@ -45,18 +52,18 @@ header {
 nav {
   text-align: center;
 }
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+nav li {
   display: inline;
   padding: 3%;
 }
 
-li a {
+nav a {
   font-family: "Raleway", sans-serif;
   color: #e2b6bc;
   text-align: right;
@@ -87,8 +94,8 @@ header h3 {
   margin: 0.85em 0.3em;
 }
 
-/* SKILLS SECTION */
-#skills {
+/* WORK SECTION */
+#work {
   background-color: #e2b6bc;
   width: 95%;
   height: 50%;
@@ -97,24 +104,97 @@ header h3 {
   padding-top: 5%;
 }
 
-.skills {
-  width: 40%;
+#work h3,
+#work h4 {
+  color: #334b71;
+  text-align: center;
+}
+
+#work h4:hover {
+  text-decoration: underline solid #cedfd6 3px;
+}
+
+#project {
   margin: auto;
+  text-align: center;
   /* display: inline-block; */
 }
 
-.skills img {
-  width: 80%;
-  height: auto;
+#work img {
+  width: 70%;
+  margin: auto;
+  /* height: 350px; */
+}
+
+/* REMOVED FOR THE MOMENT
+#work h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+} */
+
+#work a {
+  text-decoration: none;
+  color: #334b71;
+}
+
+#work ul {
+  width: 70%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+#work li {
+  font-family: "Montserrat", sans-serif;
+  color: #334b71;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+#work p {
+  font-family: "Marcellus", serif;
+  color: #334b71;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: white;
+  /* width: 95%; */
+  height: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 5%;
 }
 
 #skills h4 {
   color: #334b71;
 }
 
-#skills p {
+/* #skills p {
   font-family: "Marcellus", serif;
   color: #334b71;
+  padding: 5%;
+  line-height: 2em;
+  text-align: justify;
+} */
+
+.tools {
+  border: 3px double #334b71;
+  padding: 1.35em;
+  text-align: center;
+}
+
+.tools ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+.tools li {
+  display: inline;
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  line-height: 2em;
 }
 
 /* ABOUT SECTION */
@@ -131,6 +211,10 @@ header h3 {
 
 #about h4 {
   color: #334b71;
+}
+
+h4:hover {
+  text-decoration: underline solid #e2b6bc 3px;
 }
 
 #about p {
@@ -164,6 +248,7 @@ header h3 {
   font-family: "Marcellus", serif;
   color: #ffffff;
   line-height: 2em;
+  margin: 1em 0.5em 1.5em 0.5em;
 }
 
 #connect h4 {
@@ -171,26 +256,48 @@ header h3 {
 }
 
 #contact-form {
+  border: 3px double white;
+  padding: 1.35em;
   text-align: center;
-}
-
-input {
   font-family: "Marcellus", serif;
+  font-size: 0.9em;
 }
 
-#message_box {
-  height: 50px;
+label {
+  display: none;
 }
 
-#connect button {
-  font-family: "Marcellus", serif;
+input,
+textarea {
+  /*All input fields */
+  border: 1px white solid;
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding-left: 5px;
+  width: 95%;
+  height: 2rem;
+}
+
+textarea {
+  /* Message Field */
+  height: 10rem;
+  padding-top: 10px;
+}
+
+::placeholder {
   color: #334b71;
-  background-color: #e2b6bc; /*changes button background when hovered*/
-  border-radius: 20%;
-  padding: 5px 10px;
 }
 
-#connect button:hover {
+button {
+  background-color: #e2b6bc;
+  color: #334b71;
+  border: none;
+  width: 80%;
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+button:hover {
   background-color: #cedfd6;
 }
 
@@ -209,10 +316,18 @@ input {
   text-align: center;
 }
 
+.social {
+  padding-top: 1em;
+}
+
 .fab {
   color: #cedfd6;
   width: 60px;
   font-size: 2.25rem;
+}
+
+.fab:hover {
+  color: #e2b6bc;
 }
 
 /* FOOTER */
