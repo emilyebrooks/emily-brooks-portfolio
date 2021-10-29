@@ -38,6 +38,13 @@ h5 {
   font-size: 0.8em;
 }
 
+h6 {
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
 /* HEADER */
 
 header {
@@ -100,7 +107,7 @@ header h3 {
   width: 95%;
   height: 50%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   padding-top: 5%;
 }
 
@@ -140,6 +147,7 @@ header h3 {
 #work ul {
   width: 70%;
   margin: auto;
+  padding-inline-start: 30px;
   padding-top: 5px;
   padding-bottom: 30px;
 }
@@ -170,14 +178,6 @@ header h3 {
   color: #334b71;
 }
 
-/* #skills p {
-  font-family: "Marcellus", serif;
-  color: #334b71;
-  padding: 5%;
-  line-height: 2em;
-  text-align: justify;
-} */
-
 .tools {
   border: 3px double #334b71;
   padding: 1.35em;
@@ -204,7 +204,7 @@ header h3 {
   width: 95%;
   height: 80%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -235,6 +235,7 @@ h4:hover {
   text-align: center;
   width: 80%;
   margin: auto;
+  font-size: 1.15em;
 }
 
 /* CONNECT SECTION */
@@ -272,15 +273,15 @@ textarea {
   /*All input fields */
   border: 1px white solid;
   display: block;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1em auto;
   padding-left: 5px;
   width: 95%;
-  height: 2rem;
+  height: 2em;
 }
 
 textarea {
   /* Message Field */
-  height: 10rem;
+  height: 10em;
   padding-top: 10px;
 }
 
@@ -323,7 +324,7 @@ button:hover {
 .fab {
   color: #cedfd6;
   width: 60px;
-  font-size: 2.25rem;
+  font-size: 2.25em;
 }
 
 .fab:hover {
@@ -351,12 +352,12 @@ footer p {
   }
 
   #headshot-quote img {
-    width: 40%;
+    width: 50%;
     display: inline;
     /* margin-left: 25px; */
   }
 
-  #headshot-quote p {
+  #heashot-quote p {
     width: 40%;
     display: inline;
     padding: 0;
@@ -364,7 +365,7 @@ footer p {
 } /*end bracket for min-width 500 */
 
 /* TABLET BREAKPOINTS SIZES */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   nav {
     text-align: right;
     margin-right: 3%;
@@ -377,5 +378,29 @@ footer p {
   header h1,
   header h3 {
     width: 60%;
+  }
+
+  #headshot-quote {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  #headshot-quote img {
+    width: 80%;
+  }
+
+  #headshot-quote p {
+    font-size: 1.5em;
+  }
+
+  .one-column {
+    width: 40%;
+    margin: auto;
+  }
+
+  .one-column p {
+    text-align: right;
   }
 } /*end bracket for min-width 767 */
