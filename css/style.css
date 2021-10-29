@@ -257,7 +257,7 @@ h4:hover {
 }
 
 #contact-form {
-  border: 3px double white;
+  /* border: 3px double white; */
   padding: 1.35em;
   text-align: center;
   font-family: "Marcellus", serif;
@@ -319,6 +319,7 @@ button:hover {
 
 .social {
   padding-top: 1em;
+  padding-bottom: 1.25em;
 }
 
 .fab {
@@ -331,6 +332,10 @@ button:hover {
   color: #e2b6bc;
 }
 
+.contact-info a:hover {
+  color: #e2b6bc;
+}
+
 /* FOOTER */
 footer {
   background-color: #334b71;
@@ -339,6 +344,7 @@ footer {
 }
 
 footer p {
+  font-family: "raleway", sans-serif;
   margin-top: 0px;
   padding: 2%;
   color: #e2b6bc;
@@ -361,6 +367,11 @@ footer p {
     width: 40%;
     display: inline;
     padding: 0;
+  }
+
+  #contact-form {
+    width: 75%;
+    margin: auto;
   }
 } /*end bracket for min-width 500 */
 
@@ -388,6 +399,7 @@ footer p {
   #clients,
   #school {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .project {
@@ -395,7 +407,7 @@ footer p {
   }
 
   #headshot-quote {
-    height: 350px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     text-align: left;
@@ -409,12 +421,34 @@ footer p {
     font-size: 1.5em;
   }
 
-  .one-column {
+  .half-width {
     width: 40%;
     margin: auto;
   }
 
-  .one-column p {
+  .half-width p {
     text-align: right;
+  }
+
+  #sidebyside {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+  }
+
+  .connect-columns {
+    width: 48%;
+  }
+
+  #contact-form {
+    width: 90%;
+    margin: 0;
+  }
+
+  .contact-info {
+    display: flex;
+    font-size: 1.15em;
+    justify-content: center;
+    margin-top: 1.5em;
   }
 } /*end bracket for min-width 767 */
