@@ -121,7 +121,7 @@ header h3 {
   text-decoration: underline solid #cedfd6 3px;
 }
 
-#project {
+.project {
   margin: auto;
   text-align: center;
   /* display: inline-block; */
@@ -378,6 +378,20 @@ footer p {
   header h1,
   header h3 {
     width: 60%;
+  }
+
+  #work h3 {
+    font-size: 1.25em;
+    padding-bottom: 20px;
+  }
+
+  #clients,
+  #school {
+    display: flex;
+  }
+
+  .project {
+    margin: 0;
   }
 
   #headshot-quote {
