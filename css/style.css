@@ -9,23 +9,30 @@ body {
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 h1 {
+  /*emily brooks*/
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.2em;
 }
 
 h3 {
+  /*web design & development line*/
   font-family: "Marcellus", serif;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
 h4 {
+  /*section headers - different colors in each section b/c of backgroundss*/
   font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.65em;
   font-weight: 400;
   text-align: center; /*centers the text in the div*/
   margin: auto; /*centers the div*/
@@ -33,26 +40,29 @@ h4 {
 }
 
 h5 {
+  /*client and school projects headers*/
   font-family: "Marcellus", serif;
   color: #334b71;
-  font-size: 0.8em;
+  font-size: 1.15em;
+  text-align: center;
 }
 
-h6 {
+/*REMOVED h6 FOR NOW*/
+/* h6 {
   font-family: "Marcellus", serif;
   color: #334b71;
   font-size: 1.25em;
   font-weight: 200;
-}
+} */
 
 /* HEADER */
 
 header {
   background-color: #334b71;
   width: 100%;
-  height: 330px;
+  min-height: 350px;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
@@ -68,6 +78,7 @@ nav ul {
 nav li {
   display: inline;
   padding: 3%;
+  font-size: 1.25em;
 }
 
 nav a {
@@ -91,8 +102,8 @@ li a:hover {
   padding: 20px 0 20px 0;
 }
 #logo img {
-  height: 75px;
-  width: 75px;
+  height: 20%;
+  width: 20%;
 }
 
 header h1,
@@ -111,7 +122,6 @@ header h3 {
   padding-top: 5%;
 }
 
-#work h3,
 #work h4 {
   color: #334b71;
   text-align: center;
@@ -155,7 +165,7 @@ header h3 {
 #work li {
   font-family: "Montserrat", sans-serif;
   color: #334b71;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: left;
 }
 
@@ -167,7 +177,6 @@ header h3 {
 /* SKILLS SECTION */
 #skills {
   background-color: white;
-  /* width: 95%; */
   height: 50%;
   margin: auto;
   margin-bottom: 20px;
@@ -180,7 +189,7 @@ header h3 {
 
 .tools {
   border: 3px double #334b71;
-  padding: 1.35em;
+  padding: 22px;
   text-align: center;
 }
 
@@ -261,7 +270,6 @@ h4:hover {
   padding: 1.35em;
   text-align: center;
   font-family: "Marcellus", serif;
-  font-size: 0.9em;
 }
 
 label {
@@ -318,8 +326,8 @@ button:hover {
 }
 
 .social {
-  padding-top: 1em;
-  padding-bottom: 1.25em;
+  padding-top: 20px;
+  padding-bottom: 24px;
 }
 
 .fab {
@@ -345,10 +353,17 @@ footer {
 
 footer p {
   font-family: "raleway", sans-serif;
+  color: #e2b6bc;
   margin-top: 0px;
   padding: 2%;
-  color: #e2b6bc;
 }
+
+/* <370 breakpoint to manage spacing at bottom of header */
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 2.25em;
+  }
+} /*end bracket for max-width 360 */
 
 /* >500 Breakpoint to manage headshot size */
 @media screen and (min-width: 500px) {
@@ -452,3 +467,19 @@ footer p {
     margin-top: 1.5em;
   }
 } /*end bracket for min-width 767 */
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .tools {
+    width: 85%;
+    margin: auto;
+  }
+
+  #about p,
+  .connect-columns p {
+    font-size: 1.25em;
+  }
+} /*end bracket for min-width 1024 */
