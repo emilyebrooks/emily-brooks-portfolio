@@ -1,6 +1,8 @@
 /* COLORS: 
 navy: #334B71
-pink: #E2B6BC
+logo pink (original): #E2B6BC
+background pink (lighter): #F1DBDE
+accent pinks (darker): #EBCCD0
 green: #CEDFD6
 grey: #F7F3F4
 white: #FFFFFF */
@@ -83,7 +85,7 @@ nav li {
 
 nav a {
   font-family: "Raleway", sans-serif;
-  color: #e2b6bc;
+  color: #ebccd0;
   text-align: right;
   text-decoration: none;
 }
@@ -112,9 +114,82 @@ header h3 {
   margin: 0.85em 0.3em;
 }
 
+/* ABOUT SECTION */
+
+#about {
+  background-color: #cedfd6;
+  width: 95%;
+  height: 80%;
+  margin: auto;
+  margin-bottom: 1.25em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#about h4 {
+  color: #334b71;
+}
+
+h4:hover {
+  text-decoration: underline solid #e2b6bc 3px;
+}
+
+#about p {
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  padding: 5%;
+  line-height: 2em;
+}
+
+#headshot-quote img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+#headshot-quote p {
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 1.15em;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: white;
+  height: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 5%;
+}
+
+#skills h4 {
+  color: #334b71;
+}
+
+.tools {
+  border: 3px double #334b71;
+  padding: 22px;
+  text-align: center;
+}
+
+.tools ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+.tools li {
+  display: inline;
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  line-height: 2em;
+}
+
 /* WORK SECTION */
 #work {
-  background-color: #e2b6bc;
+  background-color: #f1dbde;
   width: 95%;
   height: 50%;
   margin: auto;
@@ -174,79 +249,6 @@ header h3 {
   color: #334b71;
 }
 
-/* SKILLS SECTION */
-#skills {
-  background-color: white;
-  height: 50%;
-  margin: auto;
-  margin-bottom: 20px;
-  padding: 5%;
-}
-
-#skills h4 {
-  color: #334b71;
-}
-
-.tools {
-  border: 3px double #334b71;
-  padding: 22px;
-  text-align: center;
-}
-
-.tools ul {
-  list-style-type: none;
-  display: inline;
-  padding: 0;
-}
-
-.tools li {
-  display: inline;
-  font-family: "Marcellus", serif;
-  color: #334b71;
-  line-height: 2em;
-}
-
-/* ABOUT SECTION */
-
-#about {
-  background-color: #cedfd6;
-  width: 95%;
-  height: 80%;
-  margin: auto;
-  margin-bottom: 1.25em;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-#about h4 {
-  color: #334b71;
-}
-
-h4:hover {
-  text-decoration: underline solid #e2b6bc 3px;
-}
-
-#about p {
-  font-family: "Marcellus", serif;
-  color: #334b71;
-  padding: 5%;
-  line-height: 2em;
-}
-
-#headshot-quote img {
-  width: 60%;
-  display: block;
-  margin: auto;
-}
-
-#headshot-quote p {
-  font-style: italic;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  font-size: 1.15em;
-}
-
 /* CONNECT SECTION */
 
 #connect {
@@ -298,7 +300,7 @@ textarea {
 }
 
 button {
-  background-color: #e2b6bc;
+  background-color: #ebccd0;
   color: #334b71;
   border: none;
   width: 80%;
@@ -353,7 +355,7 @@ footer {
 
 footer p {
   font-family: "raleway", sans-serif;
-  color: #e2b6bc;
+  color: #ebccd0;
   margin-top: 0px;
   padding: 2%;
 }
@@ -481,5 +483,13 @@ footer p {
   #about p,
   .connect-columns p {
     font-size: 1.25em;
+  }
+
+  #headshot-quote img {
+    max-width: 360px;
+  }
+
+  #headshot-quote p {
+    font-size: 1.65em;
   }
 } /*end bracket for min-width 1024 */
