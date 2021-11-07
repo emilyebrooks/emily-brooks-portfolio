@@ -122,8 +122,8 @@ header h3 {
   height: 80%;
   margin: auto;
   margin-bottom: 1.25em;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 #about h4 {
@@ -160,12 +160,13 @@ h4:hover {
   background-color: white;
   height: 50%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   padding: 5%;
 }
 
 #skills h4 {
   color: #334b71;
+  margin-bottom: 3%;
 }
 
 .tools {
@@ -184,7 +185,8 @@ h4:hover {
   display: inline;
   font-family: "Marcellus", serif;
   color: #334b71;
-  line-height: 2em;
+  line-height: 2.25em;
+  padding: 0.25em;
 }
 
 /* WORK SECTION */
@@ -194,7 +196,8 @@ h4:hover {
   height: 50%;
   margin: auto;
   margin-bottom: 1.25em;
-  padding-top: 5%;
+  padding-top: 7%;
+  padding-bottom: 8%;
 }
 
 #work h4 {
@@ -209,6 +212,8 @@ h4:hover {
 .project {
   margin: auto;
   text-align: center;
+  line-height: 1.5em;
+  padding-bottom: 5%;
   /* display: inline-block; */
 }
 
@@ -253,7 +258,7 @@ h4:hover {
 
 #connect {
   background-color: #334b71;
-  padding: 5%;
+  padding: 7% 5% 7% 5%;
 }
 
 #connect p {
@@ -417,6 +422,8 @@ footer p {
   #school {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 
   .project {
