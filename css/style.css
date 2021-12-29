@@ -130,11 +130,13 @@ header h3 {
 
 #about h4 {
   color: #334b71;
+  text-decoration: underline solid #e2b6bc 3px;
+  text-underline-offset: 0.2em;
 }
 
-h4:hover {
+/* h4:hover {
   text-decoration: underline solid #e2b6bc 3px;
-}
+} */
 
 #about p {
   font-family: "Marcellus", serif;
@@ -169,6 +171,8 @@ h4:hover {
 #skills h4 {
   color: #334b71;
   margin-bottom: 3%;
+  text-decoration: underline solid #cedfd6 3px;
+  text-underline-offset: 0.2em;
 }
 
 .tools {
@@ -205,11 +209,13 @@ h4:hover {
 #work h4 {
   color: #334b71;
   text-align: center;
+  text-decoration: underline solid #cedfd6 3px;
+  text-underline-offset: 0.2em;
 }
 
-#work h4:hover {
+/* #work h4:hover {
   text-decoration: underline solid #cedfd6 3px;
-}
+} */
 
 .project {
   margin: auto;
@@ -272,6 +278,8 @@ h4:hover {
 
 #connect h4 {
   color: #ffffff;
+  text-decoration: underline solid #e2b6bc 3px;
+  text-underline-offset: 0.2em;
 }
 
 #contact-form {
