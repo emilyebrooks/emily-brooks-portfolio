@@ -49,13 +49,15 @@ h5 {
   text-align: center;
 }
 
-/*REMOVED h6 FOR NOW*/
-/* h6 {
+h6 {
   font-family: "Marcellus", serif;
   color: #334b71;
-  font-size: 1.25em;
-  font-weight: 200;
-} */
+  font-size: 1em;
+  /* font-weight: 200; */
+  margin: auto;
+  width: 70%;
+  text-decoration: underline;
+}
 
 /* HEADER */
 
