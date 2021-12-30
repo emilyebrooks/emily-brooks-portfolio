@@ -53,10 +53,38 @@ h6 {
   font-family: "Marcellus", serif;
   color: #334b71;
   font-size: 1em;
-  /* font-weight: 200; */
   margin: auto;
   width: 70%;
   text-decoration: underline;
+}
+
+/* BACK TO TOP BUTTON */
+#scrollButton {
+  display: none; /*Hidden by default*/
+  position: fixed; /*Fixed/sticky position*/
+  bottom: 2em; /*Positions button at bottom of page*/
+  right: 2.5%; /*Positions button 2.5% from the right to align with border edge*/
+  z-index: 99; /*Ensures button doesn't overlap*/
+  width: 20%;
+  border: 2px solid #334b71;
+  outline: none; /*Removes outline*/
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.65
+  ); /*Set background color with 65% opacity to background only (not text or border)*/
+  font-family: "Raleway", sans-serif; /*Set font*/
+  color: #334b71; /*Set text color*/
+  cursor: pointer; /*Add a mouse pointer on hover*/
+  padding: 15px;
+  border-radius: 90%;
+  font-size: 1em;
+}
+
+#scrollButton:hover {
+  background-color: #334b71;
+  color: white;
 }
 
 /* HEADER */
@@ -409,6 +437,13 @@ footer p {
 
 /* TABLET BREAKPOINTS SIZES */
 @media screen and (min-width: 768px) {
+  #scrollButton {
+    bottom: 3em;
+    width: 15%;
+    padding: 20px;
+    font-size: 1.25em;
+  }
+
   nav {
     text-align: right;
     margin-right: 3%;
