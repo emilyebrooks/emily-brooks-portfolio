@@ -5,8 +5,8 @@ Emily Brooks Portfolio
 
 Description:<br>
 I began coding coursework in April of 2020. I've worked on a lot of projects over the months, both in development and design.
-This project is my first personal project. I designed this site using PhotoShop, and built it using HTML and CSS (JavaScript to come!)
-I am always learning new coding skills, so I look forward to adding upgrades and features to my site as my skills evolve.
+This project is my first personal project. I designed this site using PhotoShop, and built it using HTML and CSS. I recently added a "To Top" scroll button using JavaScript (Yay for JavaScript!).
+I am always learning new coding skills, so I will continue adding upgrades and features to my site as my skills evolve.
 
 Goal:<br>
 As an aspiring frontend developer and career-changer, it is my goal to become employed in web design and development. This
