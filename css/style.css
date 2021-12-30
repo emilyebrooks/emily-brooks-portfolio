@@ -4,7 +4,7 @@ logo pink (original): #E2B6BC
 background pink (lighter): #F1DBDE
 accent pinks (darker): #EBCCD0
 green: #CEDFD6
-grey: #F7F3F4
+grey (scroll button): #F7F3F4
 white: #FFFFFF */
 
 body {
@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-  /*section headers - different colors in each section b/c of backgroundss*/
+  /*section headers - different colors in each section b/c of backgrounds*/
   font-family: "Raleway", sans-serif;
   font-size: 1.65em;
   font-weight: 400;
@@ -50,6 +50,7 @@ h5 {
 }
 
 h6 {
+  /*projects titles*/
   font-family: "Marcellus", serif;
   color: #334b71;
   font-size: 1em;
@@ -69,16 +70,16 @@ h6 {
   border: 2px solid #334b71;
   outline: none; /*Removes outline*/
   background-color: rgba(
-    255,
-    255,
-    255,
+    247,
+    243,
+    244,
     0.65
   ); /*Set background color with 65% opacity to background only (not text or border)*/
   font-family: "Raleway", sans-serif; /*Set font*/
   color: #334b71; /*Set text color*/
   cursor: pointer; /*Add a mouse pointer on hover*/
   padding: 15px;
-  border-radius: 90%;
+  border-radius: 90%; /*Rounded edges*/
   font-size: 1em;
 }
 
@@ -88,7 +89,6 @@ h6 {
 }
 
 /* HEADER */
-
 header {
   background-color: #334b71;
   width: 100%;
@@ -121,12 +121,12 @@ nav a {
 }
 
 li a:hover {
-  /*green line appears under word when hovered over*/
+  /*Green line appears under word when hovered over*/
   text-decoration: underline solid #cedfd6 3px;
 }
 
 #title {
-  padding-top: 30px; /*adds space between nav and logo*/
+  padding-top: 30px; /*Adds space between nav and logo*/
 }
 
 #logo {
@@ -145,7 +145,6 @@ header h3 {
 }
 
 /* ABOUT SECTION */
-
 #about {
   background-color: #cedfd6;
   width: 95%;
@@ -158,13 +157,9 @@ header h3 {
 
 #about h4 {
   color: #334b71;
-  text-decoration: underline solid #e2b6bc 3px;
-  text-underline-offset: 0.2em;
+  text-decoration: underline solid #ebccd0 3px;
+  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
 }
-
-/* h4:hover {
-  text-decoration: underline solid #e2b6bc 3px;
-} */
 
 #about p {
   font-family: "Marcellus", serif;
@@ -200,7 +195,7 @@ header h3 {
   color: #334b71;
   margin-bottom: 3%;
   text-decoration: underline solid #cedfd6 3px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
 }
 
 .tools {
@@ -238,19 +233,14 @@ header h3 {
   color: #334b71;
   text-align: center;
   text-decoration: underline solid #cedfd6 3px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
 }
-
-/* #work h4:hover {
-  text-decoration: underline solid #cedfd6 3px;
-} */
 
 .project {
   margin: auto;
   text-align: center;
   line-height: 1.5em;
   padding-bottom: 5%;
-  /* display: inline-block; */
 }
 
 #work img {
@@ -258,12 +248,6 @@ header h3 {
   margin: auto;
   /* height: 350px; */
 }
-
-/* REMOVED FOR THE MOMENT
-#work h5 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-} */
 
 #work a {
   text-decoration: none;
@@ -291,7 +275,6 @@ header h3 {
 }
 
 /* CONNECT SECTION */
-
 #connect {
   background-color: #334b71;
   padding: 7% 5% 7% 5%;
@@ -307,11 +290,10 @@ header h3 {
 #connect h4 {
   color: #ffffff;
   text-decoration: underline solid #e2b6bc 3px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
 }
 
 #contact-form {
-  /* border: 3px double white; */
   padding: 1.35em;
   text-align: center;
   font-family: "Marcellus", serif;
@@ -333,7 +315,7 @@ textarea {
 }
 
 textarea {
-  /* Message Field */
+  /* Message field */
   height: 10em;
   padding-top: 10px;
 }
@@ -393,14 +375,13 @@ button:hover {
 footer {
   background-color: #334b71;
   text-align: center;
-  /* height: 50px; */
 }
 
 footer p {
   font-family: "raleway", sans-serif;
   color: #ebccd0;
-  margin-top: 0px;
-  padding: 2%;
+  margin: 0;
+  padding: 3%;
 }
 
 /* <370 breakpoint to manage spacing at bottom of header */
@@ -408,7 +389,7 @@ footer p {
   h1 {
     font-size: 2.25em;
   }
-} /*end bracket for max-width 360 */
+} /*End bracket for max-width 360 */
 
 /* >500 Breakpoint to manage headshot size */
 @media screen and (min-width: 500px) {
@@ -420,7 +401,6 @@ footer p {
   #headshot-quote img {
     width: 50%;
     display: inline;
-    /* margin-left: 25px; */
   }
 
   #heashot-quote p {
@@ -433,7 +413,7 @@ footer p {
     width: 75%;
     margin: auto;
   }
-} /*end bracket for min-width 500 */
+} /*End bracket for min-width 500 */
 
 /* TABLET BREAKPOINTS SIZES */
 @media screen and (min-width: 768px) {
@@ -450,7 +430,7 @@ footer p {
   }
 
   #logo {
-    width: 60%; /* makes container 60% and justifies it to the left so logo shifts left on bigger screens*/
+    width: 60%; /*Makes container 60% and justifies to left so logo shifts left on bigger screens*/
   }
 
   header h1,
@@ -520,7 +500,7 @@ footer p {
     justify-content: center;
     margin-top: 1.5em;
   }
-} /*end bracket for min-width 767 */
+} /*End bracket for min-width 767 */
 
 @media screen and (min-width: 1024px) {
   h1 {
@@ -544,4 +524,4 @@ footer p {
   #headshot-quote p {
     font-size: 1.65em;
   }
-} /*end bracket for min-width 1024 */
+} /*End bracket for min-width 1024 */
