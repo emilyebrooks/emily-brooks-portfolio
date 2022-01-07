@@ -167,10 +167,14 @@ header h3 {
 }
 
 #about p {
-  font-family: "Marcellus", serif;
+  font-family: "Montserrat", sans-serif;
   color: #334b71;
-  padding: 5%;
+  padding: 1% 5%;
   line-height: 2em;
+}
+
+#headshot-quote {
+  padding-bottom: 5%;
 }
 
 #headshot-quote img {
@@ -180,6 +184,7 @@ header h3 {
 }
 
 #headshot-quote p {
+  font-family: "Marcellus", sans-serif;
   font-style: italic;
   text-align: center;
   width: 80%;
