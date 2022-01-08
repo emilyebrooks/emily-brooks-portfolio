@@ -149,6 +149,23 @@ header h3 {
   margin: 0.85em 0.3em;
 }
 
+#social-header {
+  text-align: center;
+  padding: 15% 10% 2%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+  /* display: none; */
+}
+
+#social-header a {
+  padding-top: 2%;
+}
+
+#social-header .fab {
+  font-size: 1.75em;
+}
+
 /* ABOUT SECTION */
 #about {
   background-color: #cedfd6;
@@ -448,6 +465,15 @@ footer p {
     width: 60%;
   }
 
+  #social-header {
+    text-align: center;
+    padding: 0;
+    margin-top: -15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .tools {
     margin: auto;
     width: 85%;
@@ -524,6 +550,10 @@ footer p {
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 3em;
+  }
+
+  header h3 {
+    padding-bottom: 5%;
   }
 
   .tools {
