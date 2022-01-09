@@ -109,7 +109,6 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
 }
 
 nav li {
@@ -275,9 +274,7 @@ header h3 {
 
 #work ul {
   width: 70%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   padding-inline-start: 30px;
 }
 
@@ -291,6 +288,14 @@ header h3 {
 #work p {
   font-family: "Marcellus", serif;
   color: #334b71;
+}
+#demo-button {
+  background-color: #f1dbde;
+  color: #334b71;
+  font-family: "Marcellus", serif;
+  font-size: 1em;
+  border: 2px outset #ffffff;
+  width: 30%;
 }
 
 /* CONNECT SECTION */
