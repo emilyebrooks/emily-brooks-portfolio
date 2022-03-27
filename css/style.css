@@ -44,11 +44,12 @@ h4 {
 
 h5 {
   /*client and school projects headers*/
+  /* background-color: white; */
   font-family: "Marcellus", serif;
   color: #334b71;
   font-size: 1.15em;
   text-align: center;
-  border: 2px outset #ffffff;
+  /* border: 2px outset #ffffff; */
   width: 60%;
   margin: 50px auto;
   padding: 10px;
@@ -60,6 +61,7 @@ h6 {
   color: #334b71;
   font-size: 1.15em;
   margin: auto;
+  padding-bottom: 25px;
   width: 70%;
   text-decoration: underline;
 }
@@ -109,6 +111,7 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 nav li {
@@ -200,42 +203,6 @@ header h3 {
   font-size: 1.15em;
 }
 
-/* SKILLS SECTION */
-#skills {
-  background-color: white;
-  height: 50%;
-  margin: auto;
-  margin-bottom: 25px;
-  padding: 5%;
-}
-
-#skills h4 {
-  color: #334b71;
-  margin-bottom: 3%;
-  text-decoration: underline solid #cedfd6 3px;
-  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
-}
-
-.tools {
-  border: 3px double #334b71;
-  padding: 22px;
-  text-align: center;
-}
-
-.tools ul {
-  list-style-type: none;
-  display: inline;
-  padding: 0;
-}
-
-.tools li {
-  display: inline;
-  font-family: "Marcellus", serif;
-  color: #334b71;
-  line-height: 2.25em;
-  padding: 0.25em;
-}
-
 /* WORK SECTION */
 #work {
   background-color: #f1dbde;
@@ -289,13 +256,50 @@ header h3 {
   font-family: "Marcellus", serif;
   color: #334b71;
 }
-#demo-button {
-  background-color: #f1dbde;
+#live-button {
+  background-color: white;
   color: #334b71;
   font-family: "Marcellus", serif;
   font-size: 1em;
   border: 2px outset #ffffff;
   width: 30%;
+  cursor: grab;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: white;
+  height: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 5%;
+}
+
+#skills h4 {
+  color: #334b71;
+  margin-bottom: 3%;
+  text-decoration: underline solid #cedfd6 3px;
+  text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
+}
+
+.tools {
+  border: 3px double #334b71;
+  padding: 22px;
+  text-align: center;
+}
+
+.tools ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+.tools li {
+  display: inline;
+  font-family: "Marcellus", serif;
+  color: #334b71;
+  line-height: 2.25em;
+  padding: 0.25em;
 }
 
 /* CONNECT SECTION */
@@ -355,6 +359,7 @@ button {
   width: 80%;
   padding: 5px;
   font-size: 1.25em;
+  cursor: grab;
 }
 
 button:hover {
