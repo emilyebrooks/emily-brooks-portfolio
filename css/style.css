@@ -73,7 +73,7 @@ h6 {
   bottom: 2em; /*Positions button at bottom of page*/
   right: 2.5%; /*Positions button 2.5% from the right to align with border edge*/
   z-index: 99; /*Ensures button doesn't overlap*/
-  width: 20%;
+  width: 15%;
   border: 2px solid #334b71;
   outline: none; /*Removes outline*/
   background-color: rgba(
@@ -84,15 +84,17 @@ h6 {
   ); /*Set background color with 65% opacity to background only (not text or border)*/
   font-family: "Raleway", sans-serif; /*Set font*/
   color: #334b71; /*Set text color*/
-  cursor: pointer; /*Add a mouse pointer on hover*/
   padding: 15px;
-  border-radius: 90%; /*Rounded edges*/
-  font-size: 1em;
 }
 
 #scrollButton:hover {
   background-color: #334b71;
   color: white;
+}
+
+#scrollButton .fa {
+  display: flex;
+  justify-content: center;
 }
 
 /* HEADER */
@@ -261,7 +263,9 @@ header h3 {
   color: #334b71;
   font-family: "Marcellus", serif;
   font-size: 1em;
-  border: 2px outset #ffffff;
+  /* border: 2px outset #ffffff; */
+  border: 1px solid #334b71;
+  border-radius: 20px;
   width: 30%;
   cursor: grab;
 }
@@ -360,6 +364,7 @@ button {
   padding: 5px;
   font-size: 1.25em;
   cursor: grab;
+  border-radius: 20px;
 }
 
 button:hover {
@@ -422,6 +427,10 @@ footer p {
 
 /* >500 Breakpoint to manage headshot size */
 @media screen and (min-width: 500px) {
+  #scrollButton {
+    width: 12%;
+  }
+
   #headshot-quote {
     margin: auto;
     text-align: center;
@@ -448,7 +457,7 @@ footer p {
 @media screen and (min-width: 768px) {
   #scrollButton {
     bottom: 3em;
-    width: 15%;
+    width: 8%;
     padding: 20px;
     font-size: 1.25em;
   }
@@ -569,6 +578,10 @@ footer p {
 
   nav li {
     font-size: 1.75em;
+  }
+
+  #scrollButton {
+    width: 5%;
   }
 
   #social-header .fab {
