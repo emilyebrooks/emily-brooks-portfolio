@@ -205,6 +205,102 @@ header h3 {
   font-size: 1.15em;
 }
 
+/* ABOUT - Q&A WITH EMILY SECTION */
+#more {
+  margin: auto;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-size: 1em;
+  width: 80%;
+}
+
+#more-button {
+  margin: auto;
+  background-color: white;
+  color: #334b71;
+  font-family: "Marcellus", serif;
+  font-size: 1em;
+  border: 1px solid #334b71;
+  border-radius: 20px;
+  width: 50%;
+  cursor: grab;
+  padding: 15px;
+  margin: 20px;
+}
+
+#more-button:hover {
+  background-color: #f1dbde; 
+}
+
+/* Hide Q&A section by default */
+.qa-dropdown {
+  display: none; 
+}
+
+.qa-set {
+  box-shadow: 2px 2px 5px #334b71;
+  border-radius: 30px; 
+  background-color: white;
+  text-align: left;
+  margin-bottom: 25px;
+  color: #334b71;
+}
+
+/* Hide close button by default  */
+.close-icon {
+  display: none;
+}
+
+.question {
+  display: flex;
+  text-transform: uppercase; 
+}
+
+.question p {
+  width: 90%;
+}
+
+.qa-buttons {
+  font-size: 1.25em;
+  color: #334b71;
+  padding: 20px;
+  background: none;
+  border: none;
+  width: auto; /* Override button width settings for rest of page */
+}
+
+.qa-buttons:hover {
+  cursor: grab; 
+  background: none; /* Override button hover settings for rest of page */
+}
+
+/* Hide answer by default */
+.answer {
+  display: none;
+  border-top: 1px solid #0003;
+}
+
+/* Show entire Q&A Section on first click */
+.show-dropdown {
+  display: block;
+}
+
+/* Show answer on first click */
+.show-answer .answer {
+  display: block; 
+}
+
+/* Hide open icon on first click */
+.show-answer .open-icon {
+  display: none;
+}
+
+/* Show close icon on first click */
+.show-answer .close-icon {
+  display: inline; 
+}
+
+
 /* WORK SECTION */
 #work {
   background-color: #f1dbde;
