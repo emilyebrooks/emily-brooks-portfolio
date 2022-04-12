@@ -1,7 +1,7 @@
 //SET UP SCROLL TO TOP BUTTON
 
-//Get the scrollButton: 
-topButton = document.getElementById("scrollButton");
+//Get the scroll button: 
+topButton = document.getElementById("scroll-button");
 
 //When user scrolls down 20px from top of page, show button
 window.onscroll = function() {scrollFunction()}; 

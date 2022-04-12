@@ -67,7 +67,7 @@ h6 {
 }
 
 /* BACK TO TOP BUTTON */
-#scrollButton {
+#scroll-button {
   display: none; /*Hidden by default*/
   position: fixed; /*Fixed/sticky position*/
   bottom: 2em; /*Positions button at bottom of page*/
@@ -85,14 +85,16 @@ h6 {
   font-family: "Raleway", sans-serif; /*Set font*/
   color: #334b71; /*Set text color*/
   padding: 15px;
+  border-radius: 20px; 
 }
 
-#scrollButton:hover {
+#scroll-button:hover {
   background-color: #334b71;
   color: white;
 }
 
-#scrollButton .fa {
+/* Positions the arrow icons inside the box */
+#scroll-button .fa {
   display: flex;
   justify-content: center;
 }
@@ -214,11 +216,15 @@ header h3 {
   width: 80%;
 }
 
+.click-below {
+  font-weight: 550; 
+}
+
 #more-button {
+  font-family: "Montserrat", sans-serif;
   margin: auto;
   background-color: white;
   color: #334b71;
-  font-family: "Marcellus", serif;
   font-size: 1em;
   border: 1px solid #334b71;
   border-radius: 20px;
@@ -240,10 +246,12 @@ header h3 {
 .qa-set {
   box-shadow: 2px 2px 5px #334b71;
   border-radius: 30px; 
+  padding: 5px;
   background-color: white;
   text-align: left;
   margin-bottom: 25px;
   color: #334b71;
+  font-size: .9em;
 }
 
 /* Hide close button by default  */
@@ -253,7 +261,7 @@ header h3 {
 
 .question {
   display: flex;
-  text-transform: uppercase; 
+  font-weight: 550;
 }
 
 .question p {
@@ -266,12 +274,12 @@ header h3 {
   padding: 20px;
   background: none;
   border: none;
-  width: auto; /* Override button width settings for rest of page */
+  /* width: auto; Override button width settings for rest of page */
 }
 
 .qa-buttons:hover {
   cursor: grab; 
-  background: none; /* Override button hover settings for rest of page */
+  /* background: none; Override button hover settings for rest of page */
 }
 
 /* Hide answer by default */
@@ -359,7 +367,6 @@ header h3 {
   color: #334b71;
   font-family: "Marcellus", serif;
   font-size: 1em;
-  /* border: 2px outset #ffffff; */
   border: 1px solid #334b71;
   border-radius: 20px;
   width: 30%;
@@ -452,7 +459,7 @@ textarea {
   color: #334b71;
 }
 
-button {
+#send-button {
   background-color: #ebccd0;
   color: #334b71;
   border: none;
@@ -463,7 +470,7 @@ button {
   border-radius: 20px;
 }
 
-button:hover {
+#send-button:hover {
   background-color: #cedfd6;
 }
 
@@ -523,7 +530,7 @@ footer p {
 
 /* >500 Breakpoint to manage headshot size */
 @media screen and (min-width: 500px) {
-  #scrollButton {
+  #scroll-button {
     width: 12%;
   }
 
@@ -551,7 +558,7 @@ footer p {
 
 /* TABLET BREAKPOINTS SIZES */
 @media screen and (min-width: 768px) {
-  #scrollButton {
+  #scroll-button {
     bottom: 3em;
     width: 8%;
     padding: 20px;
@@ -676,7 +683,7 @@ footer p {
     font-size: 1.75em;
   }
 
-  #scrollButton {
+  #scroll-button {
     width: 5%;
   }
 

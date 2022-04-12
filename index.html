@@ -44,7 +44,7 @@
   </head>
   <body>
     <!-- scroll to top button -->
-    <button onclick="topFunction()" id="scrollButton" title="Scroll to Top">
+    <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
       <i class="fa fa-angles-up"></i>
     </button>
     <header>
@@ -112,8 +112,13 @@
           Chef, traveling, dining out and exploring Detroit. I love my family
           and my dog, Grizzly. And, of course, I will always love to cook.
         </p>
-        <p>Want to learn more? Click the button below!</p>
+
         <section id="more">
+          <p>
+            <span class="click-below"
+              >Want to learn more? Click the button below!</span
+            >
+          </p>
           <button type="button" id="more-button">Q&A with Emily</button>
           <div class="qa-dropdown">
             <div class="qa-container">
@@ -121,7 +126,7 @@
               <article class="qa-set">
                 <!-- Wraps one set of Q&A -->
                 <div class="question">
-                  <p>What made you want to learn how to code?</p>
+                  <p>Why did you decide to learn code?</p>
                   <button type="button" class="qa-buttons">
                     <span class="open-icon">
                       <i class="fa fa-angles-right"></i>
@@ -146,7 +151,7 @@
               <article class="qa-set">
                 <!-- Wraps one set of Q&A -->
                 <div class="question">
-                  <p>What have you enjoyed most about coding so far?</p>
+                  <p>What do you enjoy most about coding so far?</p>
                   <button type="button" class="qa-buttons">
                     <span class="open-icon">
                       <i class="fa fa-angles-right"></i>
@@ -435,7 +440,7 @@
                   id="message"
                   placeholder="Message"
                 ></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" id="send-button">Send</button>
               </form>
             </section>
           </div>
