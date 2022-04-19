@@ -30,6 +30,12 @@ showMore.addEventListener("click", function() {
     const dropdown = document.querySelector(".qa-dropdown"); 
     // console.log(dropdown); 
     dropdown.classList.toggle("show-dropdown");
+    // When more-button is clicked to close, all the answer buttons close as well
+    // This currently grabs just the first Q&A set. Need to work on code so all answers close.
+    const showAnswer = document.querySelector(".qa-set");
+    if (showAnswer.classList.contains("show-answer")) {
+        showAnswer.classList.remove("show-answer");
+    };
 });
 
 //Grab the open-icon element
@@ -42,8 +48,9 @@ btns.forEach(function (btn) {
         const toggleAnswer = e.currentTarget.parentElement.parentElement; 
         // console.log(toggleAnswer); 
         toggleAnswer.classList.toggle("show-answer");
+        });
 });
-});
+
 
 // Set auto Date in Footer
 const date = document.getElementById("date");
