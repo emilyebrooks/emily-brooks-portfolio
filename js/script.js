@@ -31,16 +31,18 @@ showMore.addEventListener("click", function() {
     // console.log(dropdown); 
     dropdown.classList.toggle("show-dropdown");
     // When more-button is clicked to close, all the answer buttons close as well
-    // This currently grabs just the first Q&A set. Need to work on code so all answers close.
-    const showAnswer = document.querySelector(".qa-set");
-    if (showAnswer.classList.contains("show-answer")) {
-        showAnswer.classList.remove("show-answer");
-    };
+    const showAnswer = document.querySelectorAll(".qa-set");
+    // console.log(showAnswer);
+    //Using forEach() to iterate over each .qa-set and remove the show-answer class
+        showAnswer.forEach(close => { 
+        close.classList.remove("show-answer");
+    });
 });
+
 
 //Grab the open-icon element
 const btns = document.querySelectorAll(".qa-buttons");
-console.log(btns); 
+// console.log(btns); 
 
 // Click open icon to reveal answer to single question
 btns.forEach(function (btn) {
