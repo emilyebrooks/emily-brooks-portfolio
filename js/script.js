@@ -1,3 +1,13 @@
+// Toggle mobile nav menu on click
+function toggleMenu() {
+    var barMenu = document.getElementById("mobile-links");
+    if (barMenu.style.display === "block") {
+      barMenu.style.display = "none";
+    } else {
+      barMenu.style.display = "block";
+    }
+  }
+
 //SET UP SCROLL TO TOP BUTTON
 
 //Get the scroll button: 

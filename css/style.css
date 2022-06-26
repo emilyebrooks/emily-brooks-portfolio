@@ -109,6 +109,46 @@ header {
   margin-bottom: 20px;
 }
 
+/* Hamburger Nav */
+.mobile-container {
+  margin-top: 
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+/* Hide links inside nav until click */
+.topnav #mobile-links {
+  display: none;
+}
+
+/* Style hanmburger links */
+.topnav a {
+  color: #ebccd0;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  text-decoration: none; 
+  font-size: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  display: block;
+}
+
+/* Style hamburger bars */
+.topnav a.icon {
+  background: #334B71;
+  display: block;
+  font-size: 2rem;
+  top: 9; 
+}
+
+/* Style active links */
+.active {
+  background-color: #334B71;
+  color: #ebccd0;
+}
+
 nav {
   text-align: center;
 }
@@ -527,6 +567,19 @@ footer p {
     font-size: 2.25em;
   }
 } /*End bracket for max-width 360 */
+
+@media screen and (max-width: 399px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
 
 /* >500 Breakpoint to manage headshot size */
 @media screen and (min-width: 500px) {
