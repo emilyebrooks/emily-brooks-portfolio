@@ -43,7 +43,7 @@ h4 {
 }
 
 h5 {
-  /*client and school projects headers*/
+  /*client and projects headers*/
   /* background-color: white; */
   font-family: "Marcellus", serif;
   color: #334b71;
@@ -364,8 +364,8 @@ header h3 {
 }
 
 
-/* WORK SECTION */
-#work {
+/* EXPERIENCE SECTION */
+#experience {
   background-color: #f1dbde;
   width: 95%;
   height: 50%;
@@ -375,11 +375,36 @@ header h3 {
   padding-bottom: 8%;
 }
 
-#work h4 {
+#experience h4 {
   color: #334b71;
   text-align: center;
   text-decoration: underline solid #cedfd6 3px;
   text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
+}
+
+#work {
+  width: 95%; 
+  margin: auto; 
+}
+
+#work h6 {
+  text-align: center; 
+}
+.professional-summary {
+  padding-bottom: 20px; 
+}
+
+.professional-summary p {
+  padding: 1% 5%; 
+  line-height: 2em;
+}
+
+.professional-img {
+  text-align:center; 
+}
+
+#work .wheelhouse-img {
+  width: 98%; 
 }
 
 .project {
@@ -389,31 +414,31 @@ header h3 {
   padding-bottom: 5%;
 }
 
-#work img {
+#experience img {
   width: 70%;
   margin: auto;
   margin-bottom: 20px;
 }
 
-#work a {
+#experience a {
   text-decoration: none;
   color: #334b71;
 }
 
-#work ul {
+#experience ul {
   width: 70%;
   margin: 30px auto;
   padding-inline-start: 30px;
 }
 
-#work li {
+#experience li {
   font-family: "Montserrat", sans-serif;
   color: #334b71;
   font-size: 1em;
   text-align: left;
 }
 
-#work p {
+#experience p {
   font-family: "Marcellus", serif;
   color: #334b71;
 }
@@ -456,7 +481,7 @@ header h3 {
   padding: 0;
 }
 
-.tools li {
+.tools li { 
   display: inline;
   font-family: "Marcellus", serif;
   color: #334b71;
@@ -675,13 +700,13 @@ footer p {
     line-height: 3;
   }
 
-  #work h3 {
+  #experience h3 {
     font-size: 1.25em;
     padding-bottom: 20px;
   }
 
   #clients,
-  #school {
+  #projects {
     display: flex;
     justify-content: space-evenly;
     padding-top: 3%;
@@ -719,6 +744,13 @@ footer p {
     display: flex;
     justify-content: space-between;
     margin-top: 1.5em;
+  }
+
+  .work-columns {
+    display: flex; 
+  }
+  .professional-img {
+    align-content: center;
   }
 
   .connect-columns {
@@ -778,6 +810,17 @@ footer p {
 
   .fab {
     font-size: 2.75em;
+  }
+
+  #work,
+  #clients, 
+  #projects {
+    max-width: 1680px; 
+    margin:auto; 
+  }
+
+  #skills {
+    max-width: 1440px; 
   }
 
   .contact-info p {
