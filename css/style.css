@@ -298,7 +298,8 @@ header h3 {
   display: none; 
 }
 
-.qa-set {
+.qa-set,
+.highlight-set {
   box-shadow: 2px 2px 5px #334b71;
   border-radius: 30px; 
   padding: 5px;
@@ -314,16 +315,19 @@ header h3 {
   display: none;
 }
 
-.question {
+.question,
+.highlights-toggle {
   display: flex;
   font-weight: 550;
 }
 
-.question p {
+.question p,
+.highlight-toggle p {
   width: 90%;
 }
 
-.qa-buttons {
+.qa-buttons,
+.highlight-buttons {
   font-size: 1.25em;
   color: #334b71;
   padding: 20px;
@@ -332,13 +336,15 @@ header h3 {
   /* width: auto; Override button width settings for rest of page */
 }
 
-.qa-buttons:hover {
+.qa-buttons:hover,
+.highlight-buttons:hover {
   cursor: grab; 
   /* background: none; Override button hover settings for rest of page */
 }
 
 /* Hide answer by default */
-.answer {
+.answer,
+.highlight-answer {
   display: none;
   border-top: 1px solid #0003;
 }
@@ -349,7 +355,8 @@ header h3 {
 }
 
 /* Show answer on first click */
-.show-answer .answer {
+.show-answer .answer,
+.show-answer .highlight-answer {
   display: block; 
 }
 
@@ -390,21 +397,42 @@ header h3 {
 #work h6 {
   text-align: center; 
 }
+
 .professional-summary {
   padding-bottom: 20px; 
 }
 
 .professional-summary p {
-  padding: 1% 5%; 
+  padding: 0 5% 1% 5%; 
+  margin-top: 0; 
   line-height: 2em;
 }
 
-.professional-img {
-  text-align:center; 
+#highlights {
+  text-align: center;
+  font-weight: 700; 
+  font-size: 1.25em; 
 }
+
+
 
 #work .wheelhouse-img {
   width: 98%; 
+}
+
+.professional-img {
+  /* text-align: center;  */
+  margin-top: 0.75em; 
+}
+
+#work ul.website-list {
+  margin-left: 0; 
+  margin-top: 10px; 
+}
+
+
+.wheelhouse-img-mobile {
+  display: none; 
 }
 
 .project {
@@ -442,6 +470,7 @@ header h3 {
   font-family: "Marcellus", serif;
   color: #334b71;
 }
+
 #live-button {
   background-color: white;
   color: #334b71;
@@ -749,6 +778,7 @@ footer p {
   .work-columns {
     display: flex; 
   }
+
   .professional-img {
     align-content: center;
   }
@@ -769,6 +799,16 @@ footer p {
     margin-top: 1.5em;
   }
 } /*End bracket for min-width 767 */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wheelhouse-img {
+    display:none; 
+  }
+  .wheelhouse-img-mobile {
+    display: inline-block; 
+    width: auto !important; 
+  }
+}
 
 @media screen and (min-width: 1024px) {
   h1 {
