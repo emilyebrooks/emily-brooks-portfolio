@@ -49,6 +49,7 @@ h5 {
   color: #334b71;
   font-size: 1.15em;
   text-align: center;
+  font-weight: 500; 
   /* border: 2px outset #ffffff; */
   width: 60%;
   margin: 50px auto;
@@ -173,8 +174,12 @@ nav a {
 
 li a:hover {
   /*Green line appears under word when hovered over*/
-  text-decoration: underline solid #cedfd6 3px;
-}
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #cedfd6;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.2em;
+}/* Safari doesn't support shorthand for text decoration */
 
 #title {
   padding-top: 30px; /*Adds space between nav and logo*/
@@ -232,9 +237,12 @@ header h3 {
 
 #about h4 {
   color: #334b71;
-  text-decoration: underline solid #ebccd0 3px;
+  text-decoration: underline; 
+  text-decoration-style: solid; 
+  text-decoration-color: #ebccd0;
+  text-decoration-thickness: 3px;
   text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
-}
+} /* Safari doesn't support shorthand for text decoration */
 
 #about p {
   font-family: "Montserrat", sans-serif;
@@ -385,17 +393,27 @@ header h3 {
 #experience h4 {
   color: #334b71;
   text-align: center;
-  text-decoration: underline solid #cedfd6 3px;
+  text-decoration: underline; 
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #cedfd6;
   text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
+}/* Safari doesn't support shorthand for text decoration */
+
+#experience h5 {
+  margin: 50px auto 10px; 
 }
 
-#work {
+#work,
+.experience-separator {
   width: 95%; 
   margin: auto; 
+  border-bottom: 1px solid #334B71;
 }
 
 #work h6 {
   text-align: center; 
+  font-weight: 500; 
 }
 
 .professional-summary {
@@ -413,8 +431,6 @@ header h3 {
   font-weight: 700; 
   font-size: 1.25em; 
 }
-
-
 
 #work .wheelhouse-img {
   width: 98%; 
@@ -494,9 +510,13 @@ header h3 {
 #skills h4 {
   color: #334b71;
   margin-bottom: 3%;
-  text-decoration: underline solid #cedfd6 3px;
+  text-decoration: underline;
+  text-decoration-style: solid; 
+  text-decoration-color: #cedfd6; 
+  text-decoration-thickness: 3px;
   text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
-}
+}/* Safari doesn't support shorthand for text decoration */
+
 
 .tools {
   border: 3px double #334b71;
@@ -533,7 +553,10 @@ header h3 {
 
 #connect h4 {
   color: #ffffff;
-  text-decoration: underline solid #e2b6bc 3px;
+  text-decoration: underline; 
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #e2b6bc; 
   text-underline-offset: 0.2em; /*Adds spacing between text and underline*/
 }
 
@@ -779,10 +802,6 @@ footer p {
     display: flex; 
   }
 
-  .professional-img {
-    align-content: center;
-  }
-
   .connect-columns {
     width: 48%;
   }
@@ -806,7 +825,9 @@ footer p {
   }
   .wheelhouse-img-mobile {
     display: inline-block; 
-    width: auto !important; 
+    width: 275px !important; 
+    margin-left: 10px !important;
+    margin-right: 10px !important; 
   }
 }
 
@@ -857,6 +878,14 @@ footer p {
   #projects {
     max-width: 1680px; 
     margin:auto; 
+  }
+
+  .work-columns {
+    display: block; 
+  }
+
+  .professional-img {
+    text-align: center; 
   }
 
   #skills {
