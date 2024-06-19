@@ -433,11 +433,11 @@ header h3 {
 }
 
 #work .wheelhouse-img {
-  width: 98%; 
+  width: 80%; 
 }
 
 .professional-img {
-  /* text-align: center;  */
+  text-align: center; 
   margin-top: 0.75em; 
 }
 
@@ -686,14 +686,14 @@ footer p {
 
   #headshot-quote img {
     width: 50%;
-    display: inline;
+    /* display: inline; */
   }
 
-  #heashot-quote p {
+  /* #heashot-quote p {
     width: 40%;
     display: inline;
     padding: 0;
-  }
+  } */
 
   #contact-form {
     width: 75%;
@@ -857,8 +857,13 @@ footer p {
   }
 
   #about p,
+  #work p,
   .connect-columns p {
     font-size: 1.25em;
+  }
+
+  #headshot-quote {
+    max-width: 1680px;
   }
 
   #headshot-quote img {
@@ -867,6 +872,13 @@ footer p {
 
   #headshot-quote p {
     font-size: 1.65em;
+  }
+
+  .about-summary,
+  .experience-separator,
+  #sidebyside {
+    max-width: 1680px;
+    margin: auto; 
   }
 
   .fab {
@@ -886,6 +898,10 @@ footer p {
 
   .professional-img {
     text-align: center; 
+  }
+
+  #work .wheelhouse-img {
+    max-width: 750px; 
   }
 
   #skills {
