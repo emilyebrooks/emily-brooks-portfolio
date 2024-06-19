@@ -912,3 +912,16 @@ footer p {
     font-size: 1.35em;
   }
 } /*End bracket for min-width 1024 */
+
+@media screen and (min-width: 1280px) {
+  #title {
+    padding-bottom: 30px; 
+  }
+}
+
+@media screen and (min-width: 1925px) {
+  #title {
+    padding-bottom: 100px; 
+  }
+}
+
